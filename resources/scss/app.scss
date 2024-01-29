@@ -1,1 +1,26 @@
 @import "~bootstrap/scss/bootstrap";
+
+body {
+    background-color: rgb(31, 30, 30);
+}
+
+//header
+header {
+    background-color: aquamarine;
+}
+
+//header
+//main
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(73, 78, 153);
+
+    .card {
+        width: calc(100% / 3 - 1.25rem);
+        margin: 10px;
+    }
+}
+
+//main

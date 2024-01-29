@@ -8,8 +8,30 @@
     @vite('resources/js/app.js')
 </head>
 <body>
-@foreach ($movies as $movie )
-    {{$movie['title']}}
+    <header class="d-flex justify-content-center py-3">
+         <h1>Laravel Model Controller</h1>
+    </header>
+    
+    <div class="container mt-5 d-flex flex-wrap">
+        @foreach ($movies as $movie )
+        <!--card-->
+        <div class="card p-2">
+            <h4>{{$movie['title']}}</h4>
+            <div>
+                <div class="my-2">
+                   <span> <strong>nationality:</strong> </span> {{$movie['nationality']}}
+                </div>
+                <div class="my-2">
+                    <span><strong>Pubblicazione:</strong></span>{{$movie['date']}}
+                </div>
+                <div>
+                   <span><strong>Voto</strong></span> {{$movie['vote']}}
+                </div>
+            </div>
+        </div>
+        <!--/card-->
 @endforeach
+    </div>
+
 </body>
 </html>
